@@ -3,7 +3,7 @@ const books = [
     {
         id: 1,
 
-        title: "Juno and Legs",
+        title: "Juno loves Legs",
 
         author: "Karl Geary",
 
@@ -39,7 +39,7 @@ const books = [
 
         genre: "Roman",
 
-        rating: 4,
+        rating: 4.5,
 
         favorite: true,
 
@@ -69,7 +69,7 @@ const books = [
 
         genre: "Roman",
 
-        rating: 5,
+        rating: 3,
 
         favorite: true,
 
@@ -82,13 +82,11 @@ const books = [
         ],
 
         description:
-            "Deux adolescents issus de milieux différents développent une amitié profonde dans le Brooklyn des années 1940. Un roman sur les choix, la famille et la liberté intellectuelle.",
+            "Deux adolescents juifs issus de milieux différents (orthodoxe ++ et un peu moins) développent une amitié profonde dans le Brooklyn des années 1940.Juste avant la création d'Israël qui change pas mal de choses, mais je m'attendais à ce qu'il en fasse un sujet sur une plus grande partie du livre",
 
-        review:
-            "Une magnifique réflexion sur l'amitié et la construction de soi.",
 
         date:
-            "Lu en Juillet 2026"
+            "Lu en Juillet 2026. je peux prêter le livre (fr)"
     },
 
 
@@ -132,7 +130,7 @@ const books = [
 
         genre: "Roman",
 
-        rating: 5,
+        rating: 4,
 
         favorite: true,
 
@@ -145,7 +143,7 @@ const books = [
         ],
 
         description:
-            "Existe en mini-série sur Netflix qui fait bien l'affaire!!",
+            "On suit en parallèle, une jeune fille parisienne aveugle dont le père gère la collection des pierres rares du Muséum d'Histoire Nat. au début de l'occupation et d'un jeune allemand, génie de la radio, qui se retrouve à s'enroler dans le nazisme pour échapper à la giga misère. Existe en mini-série sur Netflix qui fait bien l'affaire!!",
 
         date:
             "Lu en Juillet 2026"
@@ -180,5 +178,266 @@ const books = [
             "Lu en Juillet 2026"
     },
 
+    {
+        id: 7,
+
+        title: "Carrie Soto is Back",
+
+        author: "Taylor Jenkins Reid",
+
+        genre: "Roman",
+
+        rating: 3.5,
+
+        favorite: true,
+
+        cover: "images/carrie-soto.jpg",
+
+        keywords: [
+            "Tennis (genre le sport)",
+            " à peu près la lifestory de serena williams",
+            " Autrice de 7 husbands de Evelyn Hugo"
+        ],
+
+        description:
+            "l'histoire d'une tennis woman qui a pris sa retraite après une blessure et décide de revenir jouer alors qu'elle est un peu '''âgée'''. focus dans le monde du tennis et des sacrifices à faire pour la gloire",
+
+        date:
+            "Lu en Juin 2026"
+    },
+
+
+
+    {
+        id: 8,
+
+        title: "The Underground Railroad",
+
+        author: "Colson Whitehead",
+
+        genre: "Roman",
+
+        rating: 5,
+
+        favorite: true,
+
+        cover: "images/underground.jpg",
+
+        keywords: [
+            "Esclavage",
+            " Réseau souterrain Sud-Nord ",
+            " Pulitzer Prize"
+        ],
+
+        description:
+            "wow. un récit sur un réseau de chemin de fer souterrain qui permettait aux esclaves du Sud de s'enfuir vers le Nord, où ils seraient 'libres'. Dur parce que pas tout rose logique, mais très intéressant pour en apprendre plus sur ce système impressionant",
+
+        date:
+            "Lu en juin 2026"
+    },
+
+
+    {
+        id: 10,
+
+        title: "American Dirt",
+
+        author: "Jeanine Cummins",
+
+        genre: "Roman",
+
+        rating: 5,
+
+        favorite: true,
+
+        cover: "images/american-dirt.jpg",
+
+        keywords: [
+            "Immigration Mexique - USA",
+            " Vrai pageturner, et intense et eye-opening",
+            " TW: il se passe parfois des choses un peu horribles sur le chemin de la migration"
+        ],
+
+        description:
+            "Histoire d'une mère et son fils qui doivent s'enfuir du Mexique à cause d'un cartel qui veut leur peau. On suit leur chemin vers ce qu'ils espèrent être la liberté aux USA. C'est - . J'ai déjà réussi à le faire lire à Marius!",
+
+        date:
+            "Lu en juin 202 sur les conseils de Madame MacDonald"
+    },
+
+    /*
+     {
+        id: 10,
+
+        title: "",
+
+        author: "",
+
+        genre: "Roman",
+
+        rating: ,
+
+        favorite: true,
+
+        cover: "images/.jpg",
+
+        keywords: [
+            " ",
+            " ",
+            " "
+        ],
+
+        description:
+            "",
+
+        date:
+            "Lu en  2026"
+
+    },
+
+     {
+        id: 10,
+
+        title: "",
+
+        author: "",
+
+        genre: "Roman",
+
+        rating: ,
+
+        favorite: true,
+
+        cover: "images/.jpg",
+
+        keywords: [
+            " ",
+            " ",
+            " "
+        ],
+
+        description:
+            "",
+
+        date:
+            "Lu en  2026"
+
+    },
+
+     {
+        id: 10,
+
+        title: "",
+
+        author: "",
+
+        genre: "Roman",
+
+        rating: ,
+
+        favorite: true,
+
+        cover: "images/.jpg",
+
+        keywords: [
+            " ",
+            " ",
+            " "
+        ],
+
+        description:
+            "",
+
+        date:
+            "Lu en  2026"
+
+    },
+
+     {
+        id: 10,
+
+        title: "",
+
+        author: "",
+
+        genre: "Roman",
+
+        rating: ,
+
+        favorite: true,
+
+        cover: "images/.jpg",
+
+        keywords: [
+            " ",
+            " ",
+            " "
+        ],
+
+        description:
+            "",
+
+        date:
+            "Lu en  2026"
+
+    },
+
+
+     {
+        id: 8,
+
+        title: "",
+
+        author: "",
+
+        genre: "Roman",
+
+        rating: ,
+
+        favorite: true,
+
+        cover: "images/.jpg",
+
+        keywords: [
+            " ",
+            " ",
+            " "
+        ],
+
+        description:
+            "",
+
+        date:
+            "Lu en  2026"
+    },
+     {
+        id: 8,
+
+        title: "",
+
+        author: "",
+
+        genre: "Roman",
+
+        rating: ,
+
+        favorite: true,
+
+        cover: "images/.jpg",
+
+        keywords: [
+            " ",
+            " ",
+            " "
+        ],
+
+        description:
+            "",
+
+        date:
+            "Lu en  2026"
+    },
+
+*/
 
 ];
