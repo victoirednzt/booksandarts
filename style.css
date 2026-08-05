@@ -1045,60 +1045,46 @@ footer {
    PAGE RECOMMANDATION
 ========================= */
 
-body {
-
-    background: #c4e0ff;
-
-}
-
-
-/* Conteneur formulaire */
 
 #recommendForm {
 
-    margin: 40px 20px;
+    width: calc(100% - 32px);
 
-    padding: 30px 22px;
+    max-width: 500px;
 
-    background: rgba(255, 255, 255, 0.65);
+    margin: 35px auto 50px;
 
-    border-radius: 35px;
+    padding: 25px 20px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    border-radius: 30px;
 
     display: flex;
 
     flex-direction: column;
 
-    gap: 10px;
+    gap: 8px;
 
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
 
 }
 
 
 
-/* Bouton retour */
+/* Retour */
 
 .back-button {
 
-    display: inline-block;
+    display: block;
 
-    margin-bottom: 15px;
+    margin: 20px;
 
     text-decoration: none;
 
     color: #604848;
 
-    font-size: 15px;
-
-    font-weight: 500;
-
-}
-
-
-
-.back-button:hover {
-
-    color: #d98c9b;
+    font-size: 16px;
 
 }
 
@@ -1110,9 +1096,11 @@ body {
 
     margin-top: 15px;
 
+    margin-bottom: 5px;
+
     font-family: "DM Serif Display", serif;
 
-    font-size: 21px;
+    font-size: 20px;
 
     color: #493737;
 
@@ -1129,34 +1117,29 @@ body {
 
     width: 100%;
 
+    min-height: 52px;
+
+    padding: 14px 16px;
+
     border: none;
 
-    outline: none;
+    border-radius: 18px;
 
     background: white;
-
-    border-radius: 22px;
-
-    padding: 15px 18px;
 
     font-family: "Inter", sans-serif;
 
     font-size: 16px;
 
-    color: #493737;
+    color: #3d3030;
 
-
-    box-shadow:
-        0 5px 15px rgba(80, 50, 50, 0.05);
-
-
-    appearance: none;
+    outline: none;
 
 }
 
 
 
-/* Focus quand on écrit */
+/* Quand on clique dans un champ */
 
 #recommendForm input:focus,
 #recommendForm select:focus,
@@ -1168,103 +1151,53 @@ body {
 
 
 
-/* Zone texte */
+/* Texte long */
 
 #recommendForm textarea {
 
-    min-height: 130px;
+    min-height: 140px;
 
     resize: none;
 
-    line-height: 1.5;
-
 }
 
 
 
-/* Select */
-
-#recommendForm select {
-
-    cursor: pointer;
-
-}
-
-
-
-/* Bouton envoyer */
+/* Bouton */
 
 #recommendForm button {
 
 
     margin-top: 25px;
 
+    width: 100%;
+
+    min-height: 55px;
 
     border: none;
 
+    border-radius: 30px;
 
     background: #d98c9b;
 
-
     color: white;
 
-
-    padding: 16px;
-
-
-    border-radius: 30px;
-
-
-    font-size: 16px;
-
+    font-size: 17px;
 
     font-family: "Inter", sans-serif;
 
-
-    cursor: pointer;
-
-
-    transition: 0.3s;
-
-
 }
 
 
 
-#recommendForm button:hover {
+/* effet tactile téléphone */
 
-    transform: translateY(-3px);
+#recommendForm button:active {
 
-    background: #c87989;
-
-}
-
-
-
-/* Petites fleurs en fond */
-
-#recommendForm::before {
-
-
-    content: "✿";
-
-
-    position: absolute;
-
-
-    right: 30px;
-
-
-    top: 80px;
-
-
-    font-size: 50px;
-
-
-    opacity: 0.15;
-
+    transform: scale(0.97);
 
 }
+
 
 
 /* Ordinateur */
@@ -1274,11 +1207,8 @@ body {
 
     #recommendForm {
 
-        max-width: 550px;
-
-        margin: 50px auto;
+        margin-top: 50px;
 
     }
-
 
 }
