@@ -29,7 +29,21 @@
 </head>
 
 
+
+
 <body>
+
+    <div class="recommend-banner">
+
+        <span>
+            ✨ Une découverte à partager ?
+        </span>
+
+        <a href="recommend.html">
+            Recommander une œuvre
+        </a>
+
+    </div>
 
 
     <!-- Décoration florale -->
@@ -86,18 +100,17 @@
 
     <nav class="categories">
 
-        <button class="category active">
-            Tout
+        <button class="category active" data-filter="Books">
+            📚 Books
         </button>
 
-        <button class="category">
-            📖 Roman
+        <button class="category" data-filter="Arts">
+            🎨 Arts
         </button>
 
-        <button class="category">
-            🎨 Art (vide pour l'instant mskn)
+        <button class="category" data-filter="Community">
+            ✨ Reco de la commu
         </button>
-
 
     </nav>
 
@@ -108,17 +121,6 @@
     <!-- LECTURES -->
 
     <main>
-
-
-        <section class="section-title">
-
-            <h2>
-                Lectures récentes
-            </h2>
-
-
-
-        </section>
 
 
 
@@ -134,25 +136,8 @@
 
 
 
-    <!-- A PROPOS -->
 
 
-    <section class="about">
-
-
-        <h2>
-            À propos 🌷
-        </h2>
-
-
-        <p>
-
-            J'aime lire. Bye.
-
-        </p>
-
-
-    </section>
 
 
 
@@ -170,12 +155,14 @@
 
 
 
-    <!-- Javascript -->
-
     <script src="books.js"></script>
+    <script src="arts.js"></script>
     <script src="script.js"></script>
 
+    <script type="module" src="community.js"></script>
 
 </body>
+
+
 
 </html>

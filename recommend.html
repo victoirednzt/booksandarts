@@ -1,0 +1,90 @@
+<body>
+    <form id="recommendForm">
+
+        <head>
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+        <a href="index.html" class="back-button">
+            ← Retour
+        </a>
+
+        <label>Catégorie</label>
+
+        <select id="category">
+
+            <option value="Livre">
+                📚 Livre
+            </option>
+
+            <option value="Film">
+                🎬 Film
+            </option>
+
+            <option value="Album">
+                🎵 Musique
+            </option>
+
+            <option value="Exposition">
+                🖼️ Art
+            </option>
+
+        </select>
+
+
+
+        <label>Titre</label>
+
+        <input id="title" placeholder="Titre" required>
+
+
+
+        <label>Auteur / Artiste (facultatif)</label>
+
+        <input id="author" placeholder="Auteur ou artiste">
+
+
+
+        <label>Note</label>
+
+        <select id="rating">
+
+            <option value="5">★★★★★</option>
+
+            <option value="4.5">★★★★½</option>
+
+            <option value="4">★★★★</option>
+
+            <option value="3.5">★★★½</option>
+
+            <option value="3">★★★</option>
+
+            <option value="2">★★½</option>
+
+            <option value="2">★★</option>
+
+            <option value="1">★</option>
+
+        </select>
+
+
+
+        <label>Recommandation</label>
+
+        <textarea id="recommendation" placeholder="Donne ton avig!! ?" required>
+</textarea>
+
+        <label>Pseudo</label>
+        <input id="username" type="text" placeholder="Ton prénom ou pseudo (facultatif)">
+
+
+        <button type="submit">
+            Envoyer 🌸
+        </button>
+
+
+
+    </form>
+
+    <script type="module" src="recommend.js"></script>
+</body>

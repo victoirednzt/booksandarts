@@ -5,7 +5,13 @@ const searchInput = document.getElementById("searchInput");
 const filters = document.querySelectorAll(".category");
 
 
-let currentFilter = "Tout";
+let currentFilter = "Books";
+
+
+/* =========================
+   ETOILES
+========================= */
+
 
 function createRating(rating) {
 
@@ -19,7 +25,6 @@ function createRating(rating) {
 
 
 
-    // étoiles pleines
     for (let i = 0; i < fullStars; i++) {
 
         result += `<span class="star full">★</span>`;
@@ -28,7 +33,6 @@ function createRating(rating) {
 
 
 
-    // demi étoile
     if (halfStar) {
 
         result += `<span class="star half">★</span>`;
@@ -37,7 +41,6 @@ function createRating(rating) {
 
 
 
-    // étoiles vides
     for (let i = 0; i < emptyStars; i++) {
 
         result += `<span class="star empty">☆</span>`;
@@ -49,17 +52,20 @@ function createRating(rating) {
 
 }
 
+
+
+/* =========================
+   AFFICHAGE BOOKS
+========================= */
+
+
 function displayBooks(list) {
 
 
     container.innerHTML = "";
 
 
-
     list.forEach(book => {
-
-
-        const stars = createRating(book.rating);
 
 
 
@@ -72,7 +78,8 @@ function displayBooks(list) {
 
         card.onclick = () => {
 
-            window.location.href = `book.html?id=${book.id}`;
+            window.location.href =
+                `book.html?id=${book.id}`;
 
         };
 
@@ -115,7 +122,133 @@ function displayBooks(list) {
 
             <div class="rating">
 
-                ${stars}
+                ${createRating(book.rating)}
+
+            </div>
+
+
+
+            <div class="keywords">
+
+                ${book.keywords.map(word =>
+            `<span>${word}</span>`
+        ).join("")}
+
+            </div>
+
+
+
+            <h4 class="date">
+
+                📖 ${book.date}
+
+            </h4>
+
+
+
+        </div>
+
+
+        `;
+
+
+
+        container.appendChild(card);
+
+
+    });
+
+
+}
+
+
+
+
+/* =========================
+   AFFICHAGE ARTS
+========================= */
+
+
+function displayArts(list) {
+
+
+    container.innerHTML = "";
+
+
+    list.forEach(art => {
+
+
+
+        const card = document.createElement("article");
+
+
+        card.className = "book-card art-card";
+
+
+
+        card.onclick = () => {
+
+            window.location.href =
+                `book.html?art=${art.id}`;
+
+        };
+
+
+
+        card.innerHTML = `
+
+
+        <div class="cover">
+
+            <img 
+            src="${art.cover}"
+            alt="${art.title}"
+            >
+
+        </div>
+
+
+
+        <div class="book-info">
+
+
+            <span class="tag">
+
+                ${art.type}
+
+            </span>
+
+
+
+            <h3>
+
+                ${art.title}
+
+            </h3>
+
+
+
+            <p class="author">
+
+                ${art.artist}
+
+            </p>
+
+
+
+            <div class="rating">
+
+                ${createRating(art.rating)}
+
+            </div>
+
+
+
+            <div class="keywords">
+
+                ${art.keywords.map(word =>
+            `<span>${word}</span>`
+        ).join("")}
 
             </div>
 
@@ -123,13 +256,16 @@ function displayBooks(list) {
 
             <p class="review">
 
-                ${book.keywords}
+                ${art.review}
 
             </p>
 
+
+
             <h4 class="date">
-            
-                ${book.date}
+
+                ✨ ${art.date}
+
             </h4>
 
 
@@ -152,65 +288,160 @@ function displayBooks(list) {
 
 
 
-function filterBooks() {
+/* =========================
+   FILTRAGE
+========================= */
 
 
-    let result = books;
+function filterContent() {
+
+
+    let result;
 
 
 
-    if (currentFilter !== "Tout") {
+    if (currentFilter === "Books") {
 
 
-        result = result.filter(book =>
+        result = books;
 
-            book.genre === currentFilter
 
-        );
+
+        const search =
+            searchInput.value.toLowerCase();
+
+
+
+        if (search) {
+
+            result = result.filter(book =>
+
+                book.title
+                    .toLowerCase()
+                    .includes(search)
+
+                ||
+
+                book.author
+                    .toLowerCase()
+                    .includes(search)
+
+            );
+
+        }
+
+
+
+        displayBooks(result);
 
 
     }
 
 
 
-    const search = searchInput.value.toLowerCase();
+    else if (currentFilter === "Arts") {
+
+
+        result = arts;
 
 
 
-    if (search) {
+        const search =
+            searchInput.value.toLowerCase();
 
 
-        result = result.filter(book =>
+
+        if (search) {
+
+            result = result.filter(art =>
+
+                art.title
+                    .toLowerCase()
+                    .includes(search)
+
+                ||
+
+                art.artist
+                    .toLowerCase()
+                    .includes(search)
+
+            );
+
+        }
 
 
-            book.title.toLowerCase().includes(search)
 
-            ||
-
-            book.author.toLowerCase().includes(search)
-
-        );
-
+        displayArts(result);
 
     }
 
+    else if (currentFilter === "Community") {
+
+        loadCommunity();
+
+    }
+}
 
 
-    displayBooks(result);
+async function loadCommunity() {
+
+
+    container.innerHTML = "Chargement des recommandations 🌸";
+
+
+    const response =
+        await fetch(
+            "https://firestore.googleapis.com/v1/projects/books-and-arts/databases/(default)/documents/recommendations"
+        );
+
+
+    const data =
+        await response.json();
+
+
+    const recommendations =
+        data.documents.map(doc => {
+
+
+            return {
+
+                category:
+                    doc.fields.category.stringValue,
+
+
+                title:
+                    doc.fields.title.stringValue,
+
+
+                author:
+                    doc.fields.author?.stringValue || "",
+
+
+                rating:
+                    Number(
+                        doc.fields.rating.doubleValue ||
+                        doc.fields.rating.integerValue
+                    ),
+
+
+                recommendation:
+                    doc.fields.recommendation.stringValue
+
+            };
+
+
+        });
+
+
+    displayCommunity(recommendations);
 
 
 }
 
 
-
-
-
-searchInput.addEventListener(
-    "input",
-    filterBooks
-);
-
-
+/* =========================
+   BOUTONS
+========================= */
 
 
 filters.forEach(button => {
@@ -231,14 +462,12 @@ filters.forEach(button => {
 
 
 
-            currentFilter = button.innerText
-                .replace("📖 ", "")
-                .replace("🎨 ", "")
-                .replace("📝 ", "");
+            currentFilter =
+                button.dataset.filter;
 
 
 
-            filterBooks();
+            filterContent();
 
 
         }
@@ -249,4 +478,85 @@ filters.forEach(button => {
 
 
 
-displayBooks(books);
+
+/* =========================
+   RECHERCHE
+========================= */
+
+
+searchInput.addEventListener(
+    "input",
+    filterContent
+);
+
+
+
+
+
+/* =========================
+   DEMARRAGE
+========================= */
+
+
+filterContent();
+
+async function displayCommunity(list) {
+
+
+    container.innerHTML = "";
+
+
+    list.forEach(item => {
+
+
+        const card =
+            document.createElement("article");
+
+
+        card.className = "book-card";
+
+
+        card.innerHTML = `
+
+<div class="book-info">
+
+
+<span class="tag">
+${item.category}
+</span>
+
+
+<h3>
+${item.title}
+</h3>
+
+
+<p class="author">
+${item.author || "Anonyme"}
+</p>
+
+
+<div class="rating">
+
+${createRating(item.rating)}
+
+</div>
+
+
+<p class="review">
+${item.recommendation}
+</p>
+
+
+</div>
+
+`;
+
+
+        container.appendChild(card);
+
+
+    });
+
+
+}

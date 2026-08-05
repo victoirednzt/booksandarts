@@ -262,7 +262,7 @@ const books = [
             "Histoire d'une mère et son fils qui doivent s'enfuir du Mexique à cause d'un cartel qui veut leur peau. On suit leur chemin vers ce qu'ils espèrent être la liberté aux USA. C'est - . J'ai déjà réussi à le faire lire à Marius!",
 
         date:
-            "Lu en juin 202 sur les conseils de Madame MacDonald"
+            "Lu en juin 2026 sur les conseils de Madame MacDonald"
     },
 
     /*
@@ -439,5 +439,10 @@ const books = [
     },
 
 */
+
+
+    // ARTS
+
+
 
 ];
