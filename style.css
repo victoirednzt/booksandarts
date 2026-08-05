@@ -1046,39 +1046,13 @@ footer {
 ========================= */
 
 
-#recommendForm {
-
-    width: calc(100% - 32px);
-
-    max-width: 500px;
-
-    margin: 35px auto 50px;
-
-    padding: 25px 20px;
-
-    background: rgba(255, 255, 255, 0.75);
-
-    border-radius: 30px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 8px;
-
-    backdrop-filter: blur(8px);
-
-}
-
-
-
-/* Retour */
+/* bouton retour */
 
 .back-button {
 
     display: block;
 
-    margin: 20px;
+    margin: 25px 20px 10px;
 
     text-decoration: none;
 
@@ -1086,29 +1060,67 @@ footer {
 
     font-size: 16px;
 
+    font-weight: 500;
+
 }
 
 
 
-/* Labels */
+/* formulaire */
+
+#recommendForm {
+
+    width: calc(100% - 24px);
+
+    margin: 15px auto 50px;
+
+    padding: 32px 22px 35px;
+
+
+    background: rgba(255, 255, 255, 0.85);
+
+
+    border-radius: 35px;
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(80,50,50,0.08);
+
+
+}
+
+
+
+/* labels */
 
 #recommendForm label {
 
-    margin-top: 15px;
 
-    margin-bottom: 5px;
+    margin-top: 18px;
+
 
     font-family: "DM Serif Display", serif;
 
-    font-size: 20px;
+
+    font-size: 22px;
+
 
     color: #493737;
+
 
 }
 
 
 
-/* Champs */
+/* champs */
 
 #recommendForm input,
 #recommendForm select,
@@ -1117,98 +1129,184 @@ footer {
 
     width: 100%;
 
-    min-height: 52px;
 
-    padding: 14px 16px;
+    min-height: 58px;
 
-    border: none;
 
-    border-radius: 18px;
+    padding: 16px 18px;
+
 
     background: white;
 
+
+    border: none;
+
+
+    border-radius: 22px;
+
+
     font-family: "Inter", sans-serif;
+
 
     font-size: 16px;
 
+
     color: #3d3030;
 
+
     outline: none;
+
+
+    box-shadow:
+
+    inset 0 0 0 1px rgba(80,50,50,0.08);
+
 
 }
 
 
 
-/* Quand on clique dans un champ */
+/* focus */
 
 #recommendForm input:focus,
 #recommendForm select:focus,
 #recommendForm textarea:focus {
 
-    outline: 2px solid #d98c9b;
+
+    box-shadow:
+
+    0 0 0 3px rgba(217,140,155,0.25);
+
 
 }
 
 
 
-/* Texte long */
+/* menus déroulants */
+
+#recommendForm select {
+
+
+    cursor: pointer;
+
+}
+
+
+
+/* zone recommandation */
 
 #recommendForm textarea {
 
-    min-height: 140px;
+
+    min-height: 160px;
+
 
     resize: none;
+
+
+    line-height: 1.6;
+
 
 }
 
 
 
-/* Bouton */
+/* bouton envoyer */
 
 #recommendForm button {
 
 
-    margin-top: 25px;
-
     width: 100%;
 
-    min-height: 55px;
+
+    min-height: 60px;
+
+
+    margin-top: 30px;
+
 
     border: none;
 
-    border-radius: 30px;
+
+    border-radius: 35px;
+
 
     background: #d98c9b;
 
+
     color: white;
 
-    font-size: 17px;
 
     font-family: "Inter", sans-serif;
 
+
+    font-size: 18px;
+
+
+    font-weight: 500;
+
+
+    cursor: pointer;
+
+
+    transition: 0.2s;
+
+
 }
 
 
 
-/* effet tactile téléphone */
+/* effet tactile */
 
 #recommendForm button:active {
 
-    transform: scale(0.97);
+
+    transform: scale(0.96);
+
 
 }
 
 
 
-/* Ordinateur */
+/* petite décoration */
 
-@media(min-width:700px) {
+#recommendForm::after {
+
+
+    content: "✿";
+
+
+    position: absolute;
+
+
+    right: 45px;
+
+
+    margin-top: -15px;
+
+
+    font-size: 45px;
+
+
+    opacity: 0.12;
+
+
+}
+
+
+
+/* écran ordinateur */
+
+@media(min-width:700px){
 
 
     #recommendForm {
 
-        margin-top: 50px;
+
+        max-width: 550px;
+
 
     }
+
 
 }
