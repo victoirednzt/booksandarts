@@ -1042,62 +1042,77 @@ footer {
 }
 
 /* =========================
-   FORMULAIRE RECOMMANDATION
+   PAGE RECOMMANDATION
 ========================= */
 
+body {
 
-form {
+    background: #c4e0ff;
 
-    margin: 30px 20px;
+}
 
-    background: #fffaf7;
 
-    padding: 25px;
+/* Conteneur formulaire */
 
-    border-radius: 30px;
+#recommendForm {
+
+    margin: 40px 20px;
+
+    padding: 30px 22px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    border-radius: 35px;
 
     display: flex;
 
     flex-direction: column;
 
-    gap: 16px;
+    gap: 10px;
+
+    backdrop-filter: blur(10px);
 
 }
 
 
 
-form label {
+/* Bouton retour */
 
-    font-size: 13px;
+.back-button {
 
-    color: #756565;
+    display: inline-block;
 
-    margin-left: 8px;
+    margin-bottom: 15px;
 
-    font-family: "Inter", sans-serif;
+    text-decoration: none;
+
+    color: #604848;
+
+    font-size: 15px;
+
+    font-weight: 500;
 
 }
 
 
 
-form input,
-form select,
-form textarea {
+.back-button:hover {
+
+    color: #d98c9b;
+
+}
 
 
-    border: 1px solid #eadbd5;
 
-    outline: none;
+/* Labels */
 
-    background: #fffdfb;
+#recommendForm label {
 
-    padding: 15px 18px;
+    margin-top: 15px;
 
-    border-radius: 18px;
+    font-family: "DM Serif Display", serif;
 
-    font-family: "Inter", sans-serif;
-
-    font-size: 14px;
+    font-size: 21px;
 
     color: #493737;
 
@@ -1105,54 +1120,165 @@ form textarea {
 
 
 
-form input:focus,
-form select:focus,
-form textarea:focus {
+/* Champs */
 
-    border-color: #d98c9b;
+#recommendForm input,
+#recommendForm select,
+#recommendForm textarea {
+
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: white;
+
+    border-radius: 22px;
+
+    padding: 15px 18px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+
+    color: #493737;
+
+
+    box-shadow:
+        0 5px 15px rgba(80, 50, 50, 0.05);
+
+
+    appearance: none;
 
 }
 
 
 
-form textarea {
+/* Focus quand on écrit */
+
+#recommendForm input:focus,
+#recommendForm select:focus,
+#recommendForm textarea:focus {
+
+    outline: 2px solid #d98c9b;
+
+}
+
+
+
+/* Zone texte */
+
+#recommendForm textarea {
 
     min-height: 130px;
 
     resize: none;
 
+    line-height: 1.5;
+
 }
 
 
 
-form button {
+/* Select */
 
-    border: none;
-
-    background: #d98c9b;
-
-    color: white;
-
-    padding: 15px;
-
-    border-radius: 25px;
-
-    font-size: 15px;
+#recommendForm select {
 
     cursor: pointer;
 
-    margin-top: 10px;
+}
+
+
+
+/* Bouton envoyer */
+
+#recommendForm button {
+
+
+    margin-top: 25px;
+
+
+    border: none;
+
+
+    background: #d98c9b;
+
+
+    color: white;
+
+
+    padding: 16px;
+
+
+    border-radius: 30px;
+
+
+    font-size: 16px;
+
+
+    font-family: "Inter", sans-serif;
+
+
+    cursor: pointer;
+
+
+    transition: 0.3s;
+
 
 }
 
-.recommended-by {
 
-    font-size: 13px;
 
-    font-style: italic;
+#recommendForm button:hover {
 
-    color: #a17b7b;
+    transform: translateY(-3px);
 
-    margin-top: 10px;
+    background: #c87989;
+
+}
+
+
+
+/* Petites fleurs en fond */
+
+#recommendForm::before {
+
+
+    content: "✿";
+
+
+    position: absolute;
+
+
+    right: 30px;
+
+
+    top: 80px;
+
+
+    font-size: 50px;
+
+
+    opacity: 0.15;
+
+
+}
+
+
+/* Ordinateur */
+
+@media(min-width:700px) {
+
+
+    #recommendForm {
+
+        max-width: 550px;
+
+        margin: 50px auto;
+
+    }
+
 
 }
