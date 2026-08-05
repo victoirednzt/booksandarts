@@ -1070,11 +1070,11 @@ footer {
 
 #recommendForm {
 
-    width: calc(100% - 24px);
+    width: calc(100% - 20px);
 
     margin: 15px auto 50px;
 
-    padding: 32px 22px 35px;
+    padding: 30px 20px;
 
 
     background: rgba(255, 255, 255, 0.85);
@@ -1219,7 +1219,7 @@ footer {
     width: 100%;
 
 
-    min-height: 60px;
+    min-height: 58px;
 
 
     margin-top: 30px;
