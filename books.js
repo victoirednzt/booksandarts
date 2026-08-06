@@ -265,6 +265,172 @@ const books = [
             "Lu en juin 2026 sur les conseils de Madame MacDonald"
     },
 
+    {
+        id: 11,
+
+        title: "Passing",
+
+        author: "Nella Larsen",
+
+        genre: "Roman",
+
+        rating: 3.5,
+
+        favorite: true,
+
+        cover: "images/passing.jpeg",
+
+        keywords: [
+            "le fait de se faire passer pour blanc quand on est noir",
+            " racisme ",
+            " anti-héros "
+        ],
+
+        description:
+            "deux meufs noires qui étaient cops au collège se rencontrent adultes. dans un ncontexte de ségrégation, l'une d'entre elle se fait passer pour blanche car a la peau claire, et l'autre non et a un peu le seum ",
+
+        date:
+            "Lu en avril 2026 pour un cours de littérature"
+    },
+
+    {
+        id: 12,
+
+        title: "The Secret History",
+
+        author: "Donna Tartt",
+
+        genre: "Roman",
+
+        rating: 4,
+
+        favorite: true,
+
+        cover: "images/the-secret-history.jpg",
+
+        keywords: [
+            "wtf en grec ancien",
+            " un peu vibe le cercle des poètes disparus ",
+            " à lire mais intense "
+        ],
+
+        description:
+            " groupe d'étudiants entrainés par un maître philosophique branché grec ancien, qui ont un peu des trips cehlous. pour ceux qui l'ont lu, c'est le pire résumé de france mais c'est difficile à raconter. faut le lire pour y croire",
+
+        date:
+            "Lu en mars 2026"
+    },
+
+    {
+        id: 13,
+
+        title: "Demon Copperhead",
+
+        author: "Barbara Kingsolver",
+
+        genre: "Roman",
+
+        rating: 5,
+
+        favorite: true,
+
+        cover: "images/demon.jpg",
+
+        keywords: [
+            "remake moderne de david copperfield",
+            " thème social ",
+            "prix pultizer"
+        ],
+
+        description:
+            " on suit une jeune garçon né dans l'amérique pauvre et droguée avec pas bcp de cartes, et on le voit grandir. c'est vrmt de la FRAPPE",
+
+        date:
+            "Lu en mars 2026, double recommandé par anne lambot"
+    },
+
+    {
+        id: 14,
+
+        title: "Persuasion",
+
+        author: "Jane Austen",
+
+        genre: "Roman",
+
+        rating: 3,
+
+        favorite: true,
+
+        cover: "images/persuasion.jpeg",
+
+        keywords: [
+            "ancien temps",
+            " société ",
+            "love story slowwwwww burn lol"
+        ],
+
+        description:
+            "mon commentaire goodreads (très prem deg): relation entre Anne et Frédérick n'est pas assez explorée à mon goût. de même que les émotions intimes de anne face à sa position dans sa famille par exemple. je dois probablement le relire.",
+
+        date:
+            "Lu en mars 2026"
+    },
+
+    {
+        id: 15,
+
+        title: "Erasure",
+
+        author: "Percival Everett",
+
+        genre: "Roman",
+
+        rating: 5,
+
+        favorite: true,
+
+        cover: "images/erasure.jpg",
+
+        keywords: [
+            "black literature",
+            " mise en abyme très stylée ",
+            "histoire d'un auteur noir américain face aux clichés"
+        ],
+
+        description:
+            "on suit un auteur qui réussit à percer quand il écrit une nouvele vulgaire et clichée sur les Noirs-Américains et donc il réfléchit au sens de sa life. Sa nouvelle est inclue dans le roman, c'est vraiment un effet de style stylé",
+
+        date:
+            "Lu en février 2026"
+    },
+
+    {
+        id: 16,
+
+        title: "In the dream house",
+
+        author: "Carmen Maria Machado",
+
+        genre: "Roman",
+
+        rating: 4,
+
+        favorite: true,
+
+        cover: "images/thedreamhouse.jpeg",
+
+        keywords: [
+            "récit d'une ancienne abusive relationship",
+            " style narratif spécial et joli!!",
+        ],
+
+        description:
+            "",
+        date:
+            "Lu en février 2026"
+    },
+
     /*
      {
         id: 10,
