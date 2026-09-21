@@ -1,5 +1,33 @@
 const books = [
 
+    
+ {
+        id: 102,
+
+        title: "The Children Act",
+
+        author: " Ian McEwan",
+
+        genre: "Roman",
+
+        rating: 4,
+
+        favorite: true,
+
+        cover: "images/childrenact.jpg",
+
+        keywords: [
+            "livre court",
+            "dive dans la vie d’une juge",
+            " la loi VS convictions religieuse "
+        ],
+
+        description:
+            "une soixantenaire en galère dans son mariage, se retrouve avec le dossier d’un adolescent de presque 18 ans qui refuse une transfusion de sang (alors qu’il est gravement atteint de leucémie) car il est témoin de jehovah. facile à lire, grave intéressant et court!!",
+
+        date:
+            "Lu en Septembre 2026"
+ },
     {
         id: 101,
 
