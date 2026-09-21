@@ -1,6 +1,62 @@
 const books = [
 
     {
+        id: 101,
+
+        title: "Educated (Une éducation)",
+
+        author: "Tara Westover",
+
+        genre: "Roman",
+
+        rating: 4.5,
+
+        favorite: true,
+
+        cover: "images/educated.avif",
+
+        keywords: [
+            "livre pref d'obama en 2018 (faites en ce que vous voulez)",
+            "autobiographie/ mémoire",
+            " from mormon survivaliste to ...."
+        ],
+
+        description:
+            "on suit une fille qui grandit dans une famille de mormons très intenses, qui pensent que la fin du monde arrive etc etc (refusentl'hopital, l'école tout ça), et qui, comme vous vous en doutez, suit sa voie pour aboutir à l'écriture de ce mémoire lol. j'ai vraiment aimé la justesse et la confusion dans sa manière de décrire l'émancipation d'une secte ou d'une idéologie dans laquelle on a grandi et qui nous rattrape, surtout religieuse. c'est aussi particulièrement intéressant que ce soit le mémoire d'une femme encore jeune, ce qui laisse des issues still unresolved et le rend très authentchik",
+
+        date:
+            "Lu en Septembre 2026"
+    },
+
+    {
+        id: 100,
+
+        title: "Intermezzo",
+
+        author: "Sally Rooney",
+
+        genre: "Roman",
+
+        rating: 3.5,
+
+        favorite: true,
+
+        cover: "images/intermezzo.jpg",
+
+        keywords: [
+            "style narratif cool, saccadé",
+            " focus sur quelques personnages en PROFONDEUR",
+            " relationships"
+        ],
+
+        description:
+            "on suit les vies de deux frères adultes, après la mort de leur père. le roman est lent et dissèque plusieurs formes de relations, notamment amoureuse et les challenges de la vie moderne lol. je l'ai trouvé assez lent et j'ai toruvé ça dommage qu'on ne s'étende pas plus dans les vies de personnages secondaires (les meufs), après ça reste du sally rooney et elle fait des analyses intéressantes sur les relations etc",
+
+        date:
+            "Lu en Septembre 2026 (je peux prêter copie physique)"
+    },
+
+    {
         id: 1,
 
         title: "Juno loves Legs",
@@ -429,6 +485,33 @@ const books = [
             "",
         date:
             "Lu en février 2026"
+    },
+
+    {
+        id: 17,
+
+        title: "Les Cahiers d'Esther",
+
+        author: "Riad Sattouf",
+
+        genre: "BD",
+
+        rating: 5,
+
+        favorite: true,
+
+        cover: "images/cahier-esther.jpg",
+
+        keywords: [
+            "tranches de vie...",
+            "easy to read",
+            "drôle selon moi",
+        ],
+
+        description:
+            "sur chaque année de sa vie d'enfant-ado, on suit la vie d'esther, jeune parisienne qui vit sa life",
+        date:
+            "Lu en étés 2025-2026"
     },
 
     /*
