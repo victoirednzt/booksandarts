@@ -1,13 +1,154 @@
 const books = [
 
     {
+        id: 106,
+
+        title: "There There",
+
+        author: "Tommy Orange",
+
+        genre: "Roman (EN)",
+
+        rating: 4,
+
+        favorite: true,
+
+        cover: "images/therethere.jpg",
+
+        keywords: [
+            "vie des Native American dans l'amérique moderne",
+            "une dizaine de narrateurs, tous reliés, avec personnalités/ aspirations etc différentes",
+            "les conséquences de la destruction de la population 'Indienne' sur leurs descendants"
+        ],
+
+        description:
+            "on le lit comme un puzzle où les différents narrateurs s'emboitent peu à peu. Ce livre à plusieurs voix permet d'éviter de tomber dans le cliché et de voir différentes facettes de la minorité native, qui galère encore à s'insérer dans une société qui les a défoncés mdr",
+
+        date:
+            "Lu en Octobre 2026"
+    },
+
+
+    {
+        id: 105,
+
+        title: "Femme Vie Liberté",
+
+        author: "Marjane Satrapi (Persepolis)",
+
+        genre: "BD",
+
+        rating: 5,
+
+        favorite: true,
+
+        cover: "images/femmevie.jpg",
+
+        keywords: [
+            "révolution en iran",
+            "plein de dessinateurs, recueil d'histoires sur la vie en Iran",
+            "assassinat de mahsa amini"
+        ],
+
+        description:
+            "gros recueil led by Marjane Satrapi, qui raconte avec plusieurs petites BD le quotidien de la révolution en Iran et cet embrasement porté par les femmes et même (lol) soutenu par des hommes contre la dictature",
+
+        date:
+            "Lue en Octobre 2026"
+    },
+
+    {
+        id: 104,
+
+        title: "Petit Pays",
+
+        author: "Gaël Faye",
+
+        genre: "BD",
+
+        rating: 5,
+
+        favorite: true,
+
+        cover: "images/petitpays.jpg",
+
+        keywords: [
+            "autobiographie de son enfance au burundi ",
+            "génocide des Tutsis au Rwanda",
+            "dessins qui aident à se plonger dans le récit"
+        ],
+
+        description:
+            "cette BD, directement adaptée du roman du même nom, suit l'enfance de Gaël Faye, un enfant Tutsi qui grandit au Burundi et vit la montée des tensiosne et le début du génocide de son peuple. Très émouvant, donne envie d'en apprendre plus sur ce drame next par les Occidentaux pendant qu'il se déroulait ",
+
+        date:
+            "Lue en Octobre 2026"
+    },
+
+    {
+        id: 103,
+
+        title: "L'homme aux bras de mer",
+
+        author: "Simon Rochepeau, Thomas Azuelos",
+
+        genre: "BD",
+
+        rating: 3,
+
+        favorite: true,
+
+        cover: "images/hommemer.jpeg",
+
+        keywords: [
+            "récit de vie d'un pirate somalien",
+            "facile à lire",
+            "la personne derrière le pirate"
+        ],
+
+        description:
+            "cette BD suit un pirate somalien qui a été arrêté après avoir pris en otage un voilier français, et parle de sa réinsertion après qu'il ait été emprisonné en bretagne et aidé par une bénévole",
+
+        date:
+            "Lue en Septembre 2026"
+    },
+
+    {
+        id: 102,
+
+        title: "The Children Act",
+
+        author: "Ian McEwan",
+
+        genre: "Roman (EN)",
+
+        rating: 4,
+
+        favorite: true,
+
+        cover: "images/childrenact.jpg",
+
+        keywords: [
+            "dive dans la vie d'une juge",
+            "livre court",
+            "la loi VS témoin de jehovah"
+        ],
+
+        description:
+            "une juge soixantenaire se fait en gros quitter, pas excatement et doit gérer en même temps le dossier d'une jeune de presque 18 ans, leucémique qui refuse une transfusion de sang car témoin de jehovah. grave intéressant, facile à lire et court!!",
+
+        date:
+            "Lu en Septembre 2026"
+    },
+
+    {
         id: 101,
 
         title: "Educated (Une éducation)",
 
         author: "Tara Westover",
 
-        genre: "Roman",
+        genre: "Roman (EN)",
 
         rating: 4.5,
 
@@ -63,7 +204,7 @@ const books = [
 
         author: "Karl Geary",
 
-        genre: "Roman",
+        genre: "Roman (FR)",
 
         rating: 3.5,
 
@@ -93,7 +234,7 @@ const books = [
 
         author: "Ben Reeves",
 
-        genre: "Roman",
+        genre: "Roman (EN)",
 
         rating: 4.5,
 
