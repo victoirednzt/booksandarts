@@ -1,5 +1,62 @@
 const books = [
 
+
+    {
+        id: 106,
+
+        title: "Nous aussi",
+
+        author: "Anne Godard",
+
+        genre: "Roman (Fr)",
+
+        rating: 4,
+
+        favorite: true,
+
+        cover: "images/therethere.jpg",
+
+        keywords: [
+            "finaliste du prix goncourt",
+            "roman narré en on, chapitres courts et percutants",
+            "inceste subtil en bourgeoisie"
+        ],
+
+        description:
+            "Ici, on suit via des chapitres, plus ou moins reliés, différents personnages d'une grande famille bourgeoise parisienne, qui unveil au fur et à mesure des petits dysfonctionnements. j'ai beaucoup aimé la narration en on qui fait exactement son travail ",
+
+        date:
+            "Lu en Octobre 2026"
+    },
+
+    {
+        id: 107,
+
+        title: "Le fabuleux piano",
+
+        author: "Sonia Devillers",
+
+        genre: "Roman (Fr)",
+
+        rating: 4,
+
+        favorite: true,
+
+        cover: "images/therethere.jpg",
+
+        keywords: [
+            "finaliste du prix goncourt",
+            "roman/enquête sur un piano et son histoire depuis la fin du XIXè",
+            "spoliation nazie pendant WWII"
+        ],
+
+        description:
+            "L'auteure suit la trace d'un grand piano acheté par une famille juive à la fin du dix-neuvième et trace son histoire jusqu'à WWII, et les anzis qui pillent les instruments etc",
+
+        date:
+            "Lu en Octobre 2026"
+    },
+
     {
         id: 106,
 
