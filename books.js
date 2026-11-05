@@ -1,8 +1,66 @@
 const books = [
 
+    {
+        id: 110,
+
+        title: "Joseph dans la nuit",
+
+        author: "Olivier Grondeau",
+
+        genre: "Roman (Fr)",
+
+        rating: 4,
+
+        favorite: true,
+
+        cover: "images/josephnuit.jpg",
+
+        keywords: [
+            "finaliste du prix goncourt",
+            "récit réel de quand il a été prisonnier en iran",
+            "chapitres courts, livre court",
+            "une ode à la liberté (lol xd)"
+
+        ],
+
+        description:
+            "L'auteur faisait du stop en Iran et a été arrêté par le renseignement. Il raconte ce périple/ épreuve et parle de ses rencontres et tout. C'est facile à lire et intéressant",
+
+        date:
+            "Lu en Novembre 2026"
+    },
 
     {
-        id: 106,
+        id: 109,
+
+        title: "JE",
+
+        author: "Lilia Hassaine",
+
+        genre: "Roman (Fr)",
+
+        rating: 3.5,
+
+        favorite: true,
+
+        cover: "images/je.jpeg",
+
+        keywords: [
+            "finaliste du prix goncourt",
+            "spin-off de jane eyre: qui était la folle du grenier?",
+            "all men..."
+        ],
+
+        description:
+            "l'auteure focus sur un personnage du roman Jane Eyre de Charlotte Bronte, la femme folle de Rochester enfermée au grenier (en gros dans le livre ce mec date jane eyre mais il a une femme folle au grenier). et en fait elle décrit l'histoire de cette femme depuis son enfance en jamaïque jusqu'à sa situation malheureuse au grenier. c'est dommage de pas plus repréciser le contexte de jane eyre au début du livre je trouve et c'est une bonne idée et bien écrit mais jsp, il m'a manqué qqchose",
+
+        date:
+            "Lu en Octobre 2026"
+    },
+
+
+    {
+        id: 108,
 
         title: "Nous aussi",
 
@@ -14,7 +72,7 @@ const books = [
 
         favorite: true,
 
-        cover: "images/therethere.jpg",
+        cover: "images/nousaussi.jpg",
 
         keywords: [
             "finaliste du prix goncourt",
@@ -42,7 +100,7 @@ const books = [
 
         favorite: true,
 
-        cover: "images/therethere.jpg",
+        cover: "images/lefabuleux.jpg",
 
         keywords: [
             "finaliste du prix goncourt",
