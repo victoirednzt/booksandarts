@@ -76,12 +76,12 @@ const books = [
 
         keywords: [
             "finaliste du prix goncourt",
-            "roman narré en on, chapitres courts et percutants",
+            "roman narré en 'on', chapitres courts et percutants",
             "inceste subtil en bourgeoisie"
         ],
 
         description:
-            "Ici, on suit via des chapitres, plus ou moins reliés, différents personnages d'une grande famille bourgeoise parisienne, qui unveil au fur et à mesure des petits dysfonctionnements. j'ai beaucoup aimé la narration en on qui fait exactement son travail ",
+            "Ici, on suit via des chapitres, plus ou moins reliés, différents personnages d'une grande famille bourgeoise parisienne, qui unveil au fur et à mesure des petits dysfonctionnements. j'ai beaucoup aimé la narration en 'on' qui fait exactement son travail ",
 
         date:
             "Lu en Octobre 2026"
