@@ -31,6 +31,34 @@ const books = [
     },
 
     {
+        id: 111,
+
+        title: "The Testaments",
+
+        author: "Margaret Atwood",
+
+        genre: "Roman (En)",
+
+        rating: 4.5,
+
+        favorite: true,
+
+        cover: "images/testaments.jpg",
+
+        keywords: [
+            "spin-off de la servante écarlate",
+            "pour les pros: histoire de aunt lydia et gilead post june",
+            "pour les non-pros: on suit une dystopie dans le pays gilead, ou les meufs sont devenues des poules pondeuses (lire Handmaid's tale avant)",
+
+        ],
+
+        description:
+            "'History doesnt repeat itself but it rhymes.' Oui Margaret en fait. Elle refait un coup de maître en humanisant une femme pas très humanisable et en racontant l'éducation (si on peut appeler ça comme ça) des jeunes filles, coeur de la longévité du régime",
+        date:
+            "Lu en Octobre 2026"
+    },
+
+    {
         id: 109,
 
         title: "JE",
