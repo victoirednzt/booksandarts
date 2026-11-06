@@ -43,7 +43,7 @@ const books = [
 
         favorite: true,
 
-        cover: "images/testaments.jpg",
+        cover: "images/testaments.jpeg",
 
         keywords: [
             "spin-off de la servante écarlate",
